@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="refs/tags/honister-3.4.2"
+           upstream="honister"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="f5d761cbd5c957e4405c5d40b0c236d263c916a8"
+           upstream="honister"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="c05ae80ba680887ac924c21536091be7a1173427"
+           upstream="honister"
+           path="sources/meta-openembedded"/>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="b0b53e53baa2974d883ecc0889e71f6b66e9a7eb"
+           upstream="lts-5.15"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf"/>
+  </project>
+  <project name="meta-qt5"
+           remote="qt"
+           revision="fa0ab2ceb90bece9ef85ddb85be7a405c26b192e"
+           upstream="lts-5.15"
+           path="sources/meta-qt5"/>
+           
+  <!-- Raspberry Pi -->
+  <project name="meta-raspberrypi"
+           remote="yocto"
+           revision="378d4b6e7ba64b6a9a701457cc3780fa896ba5dc"
+           upstream="honister"
+           path="sources/meta-raspberrypi"/>
+
+  <!-- Intel -->
+  <remote name="intel"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="meta-intel"
+           remote="intel"
+           revision="fca80fae34f06c42405e45c3895e6958a7a176e0"
+           upstream="honister"
+           path="sources/meta-intel"/>
+
+  <!-- Toradex -->
+  <remote name="toradex"
+          fetch="git://git.toradex.com"/>
+  <project name="meta-toradex-bsp-common"
+           remote="toradex"
+           revision="6770c56b18a2f519f3a6832f3fdf330b2340c198"
+           upstream="master"
+           path="sources/meta-toradex-bsp-common"/>
+  <project name="meta-toradex-nxp"
+           remote="toradex"
+           revision="130e47657f954098a38321ded0c4af9b840b9a49"
+           upstream="master"
+           path="sources/meta-toradex-nxp"/>
+
+</manifest>
