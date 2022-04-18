@@ -5,13 +5,13 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="refs/tags/honister-3.4.2"
-           upstream="honister"
+           revision="c40ac16d79026169639f47be76a3f7b9d8b5178e"
+           upstream="hardknott"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="f5d761cbd5c957e4405c5d40b0c236d263c916a8"
-           upstream="honister"
+           revision="422b96cb2b6116442be1f40dfb5bd77447d1219e"
+           upstream="hardknott"
            path="sources/meta-mingw"/>
 
   <!-- OpenEmbedded -->
@@ -19,9 +19,14 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="c05ae80ba680887ac924c21536091be7a1173427"
-           upstream="honister"
+           revision="f72a73b42fa740130b388ba8555cdbefdee8d37d"
+           upstream="hardknott"
            path="sources/meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="810d6d842f103eb59f18b06426106462b15de7e2"
+           upstream="hardknott"
+           path="sources/meta-python2"/>
 
   <!-- Qt -->
   <remote name="qt"
@@ -42,12 +47,12 @@
            revision="fa0ab2ceb90bece9ef85ddb85be7a405c26b192e"
            upstream="lts-5.15"
            path="sources/meta-qt5"/>
-           
+
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
            remote="yocto"
-           revision="378d4b6e7ba64b6a9a701457cc3780fa896ba5dc"
-           upstream="honister"
+           revision="b4ec97e4eb8e36efd1f7e2f8ae020a9e55cfc239"
+           upstream="hardknott"
            path="sources/meta-raspberrypi"/>
 
   <!-- Intel -->
@@ -55,8 +60,8 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="meta-intel"
            remote="intel"
-           revision="fca80fae34f06c42405e45c3895e6958a7a176e0"
-           upstream="honister"
+           revision="4d5791d9ff515ba1660234b1987eae4d4e90eeca"
+           upstream="hardknott"
            path="sources/meta-intel"/>
 
   <!-- Toradex -->
@@ -64,13 +69,13 @@
           fetch="git://git.toradex.com"/>
   <project name="meta-toradex-bsp-common"
            remote="toradex"
-           revision="6770c56b18a2f519f3a6832f3fdf330b2340c198"
-           upstream="master"
+           revision="789e231008c7fd1ca2b2535ea0ac1ee3c29f3233"
+           upstream="dunfell-5.x.y"
            path="sources/meta-toradex-bsp-common"/>
   <project name="meta-toradex-nxp"
            remote="toradex"
-           revision="130e47657f954098a38321ded0c4af9b840b9a49"
-           upstream="master"
+           revision="c2de495bfbd1ce09f06e41ed0feb9f7041b8c65c"
+           upstream="dunfell-5.x.y"
            path="sources/meta-toradex-nxp"/>
 
 </manifest>
