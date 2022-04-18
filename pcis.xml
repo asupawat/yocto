@@ -64,18 +64,4 @@
            upstream="hardknott"
            path="sources/meta-intel"/>
 
-  <!-- Toradex -->
-  <remote name="toradex"
-          fetch="git://git.toradex.com"/>
-  <project name="meta-toradex-bsp-common"
-           remote="toradex"
-           revision="789e231008c7fd1ca2b2535ea0ac1ee3c29f3233"
-           upstream="dunfell-5.x.y"
-           path="sources/meta-toradex-bsp-common"/>
-  <project name="meta-toradex-nxp"
-           remote="toradex"
-           revision="c2de495bfbd1ce09f06e41ed0feb9f7041b8c65c"
-           upstream="dunfell-5.x.y"
-           path="sources/meta-toradex-nxp"/>
-
 </manifest>
